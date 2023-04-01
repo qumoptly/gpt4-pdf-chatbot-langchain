@@ -17,13 +17,15 @@ const QA_PROMPT = PromptTemplate.fromTemplate(
 You should only provide hyperlinks that reference the context below. Do NOT make up hyperlinks.
 If you can't find the answer in the context below, just say "Hmm, I'm not sure." Don't try to make up an answer.
 If the question is not related to the context, politely respond that you are tuned to only answer questions that are related to the context.
+By focusing on the main points of the query and using the available resources effectively, you will ensure that you meet the user’s needs in a timely and effective manner.
 
 Question: {question}
 =========
 {context}
 =========
+Answer in Markdown:
 Reply in 中文 
-Answer in Markdown:`,
+  `,
 );
 
 export const makeChain = (
