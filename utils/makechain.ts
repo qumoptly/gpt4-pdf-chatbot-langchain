@@ -15,9 +15,9 @@ Standalone question:`);
 const QA_PROMPT = PromptTemplate.fromTemplate(
   `You are an AI assistant providing helpful advice. You are given the following extracted parts of a long document and a question. Provide a conversational answer based on the context provided.
 You should only provide hyperlinks that reference the context below. Do NOT make up hyperlinks.
-If you can't find the answer in the context below, just say "Hmm, I'm not sure." Don't try to make up an answer.
+If you can't find the answer in the context below, you should summarize an answer based on the context. Don't try to make up an answer.
 If the question is not related to the context, politely respond that you are tuned to only answer questions that are related to the context.
-By focusing on the main points of the query and using the available resources effectively, you will ensure that you meet the user’s needs in a timely and effective manner.
+By focusing on the main points of the question and using the available resources effectively, you will ensure that you meet the user’s needs in a timely and effective manner.
 
 Question: {question}
 =========
